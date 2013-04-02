@@ -1,3 +1,7 @@
+/* Author: Murali K
+ * email: muralik.msr@gmail.com
+ * Date: 2 Apr 2013
+ */
 #include<stdio.h>
 #include<string.h>
 
