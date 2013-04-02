@@ -1,18 +1,11 @@
-/* C program for the Implementation Of RSA Algorithm */
+/* Author: Murali K
+ * email: muralik.msr@gmail.com
+ * Date: 2 Apr 2013
+ */
 
 #include<stdio.h>
 
-int phy,P,n,e,d,C,FLAG;
-
-int check() {
-    int i;
-    for(i=3;e%i==0 && phy%i==0;i+2)
-    {
-        FLAG = 1;
-        return;
-    }
-    FLAG = 0;
-}
+int phy,P,n,e,d,C;
 
 void encrypt() {
     int i;
@@ -40,12 +33,10 @@ void main() {
     n = p*q;
     phy=(p-1)*(q-1);
     printf("\nphy(n)\t= %d",phy);
-    do
-    {
-        printf("\nEnter value of e\t: ");
-        scanf("%d",&e);
-        check();
-    } while(FLAG==1);
+
+    printf("\nEnter value of e\t: ");
+    scanf("%d",&e);
+
     d = 1;
     do
     {
@@ -53,6 +44,7 @@ void main() {
         d++;
     } while(s!=1);
     d = d-1;
+
     printf("\n\tPublic Key\t: {%d,%d}",e,n);
     printf("\n\tPrivate Key\t: {%d,%d}",d,n);
     
