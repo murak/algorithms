@@ -25,7 +25,7 @@ void decrypt() {
     printf("\n\tAfter Decrption. Plain Text : %d\n\n",P);
 }
 
-void main() {
+int main() {
     int p,q,s;
     char ch= '3';
     printf("Enter Two Relatively Prime Numbers\t: ");
@@ -65,5 +65,5 @@ void main() {
                 printf("\nInvalid Option!!\n");
                     
     }
-
+    return 0;
 }
